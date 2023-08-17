@@ -29,7 +29,18 @@ object_counter = {}
 
 object_counter1 = {}
 
-line = [(100, 500), (1050, 500)]
+
+print("Entrez les coordonnées du premier point (X1,Y1) :")
+x1 = int(input("X1 : "))
+y1 = int(input("Y1 : "))
+        
+print("Entrez les coordonnées du deuxième point (X2,Y2) :")
+x2 = int(input("X2 : "))
+y2 = int(input("Y2 : "))
+
+line = [(x1, y1), (x2, y2)]
+
+
 def init_tracker():
     global deepsort
     cfg_deep = get_config()
